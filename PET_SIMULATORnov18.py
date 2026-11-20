@@ -35,7 +35,8 @@ while True:
          except:
               ValueError  
     if energy <5 :
-         print("your pet died !,\n cause of low energy ") 
+         print("your pet died !,\n cause of low energy ")
+         break
     elif energy>100 :
          print(" you did a great job and now your pet has evoleved ,\n you get to choose a new name for your pet ")
          name = input("enter the new name for your evolved pet")
@@ -48,6 +49,7 @@ while True:
          else:
               energy=0
               print("OOPS ! your pet died .")
+              break 
     elif happiness <5:
          print("your pets happiness index is gowing down choose someting to make it happy or else it will DIE.")
          if care_action == "play":
